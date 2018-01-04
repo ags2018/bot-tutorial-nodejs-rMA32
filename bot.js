@@ -71,7 +71,7 @@ this.res.end();
   }
     else if(request.text && botRegexSr.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/78jbQMz.jpg");
+    postMessage("http://i.imgur.com/78jbQMz.jpg ");
     this.res.end();
   }  
     else if(request.text && botRegexQu.test(request.text)) {
