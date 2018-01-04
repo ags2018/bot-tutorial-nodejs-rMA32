@@ -49,6 +49,11 @@ function respond() {
     postMessage("https://i.groupme.com/598x864.png.f4a6779abda24f71b847008b5157cff0.large");
     this.res.end();
   } 
+    else if(request.text && botRegexRuless.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://i.groupme.com/599x844.png.549ab0e1797d4c94a58526161d1c0c3c.large");
+this.res.end();
+}
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media-curse.cursecdn.com/attachments/188/497/f745af91a24e968d010f926f58dcdb12.png");
@@ -104,12 +109,7 @@ this.res.writeHead(200);
 postMessage("https://pbs.twimg.com/media/CLNho0mUcAAZ5KC.jpg");
 this.res.end();
 }
-  else if(request.text && botRegexRuless.test(request.text)) {
-this.res.writeHead(200);
-postMessage("https://i.groupme.com/599x844.png.549ab0e1797d4c94a58526161d1c0c3c.large");
-this.res.end();
-}
-    else if(request.text && botRegexCrying.test(request.text)) {
+  else if(request.text && botRegexCrying.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://i.groupme.com/499x281.gif.5b2ee2198fcb4d14996bb88a9c7fcff4");
 this.res.end();
