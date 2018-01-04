@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/mike/; botDEZ = /^\/eat/; botDuck = /^\/duck/;
-      botRegexTw = /^\/twitch/i; botRegexYu = /^\/youtube/i; botRegexTrade = /^\/trades/; botRegexGuide = /^\/guidelines/;  botRegexSh = /^\/voll/; botRegexCC = /^\/bleach/; botRegexSr = /^\/trash/; botRegexQu = /^\/stfu/; botRegexBack = /^\/comeback/;
+      botRegexTw = /^\/twitch/i; botRegexYu = /^\/youtube/i; botRegexGuide = /^\/guidelines/;  botRegexSh = /^\/voll/; botRegexCC = /^\/bleach/; botRegexSr = /^\/trash/; botRegexQu = /^\/stfu/; botRegexBack = /^\/comeback/;
       botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCrying = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://media.giphy.com/media/3o6Mb93JnT2hfbvK92/giphy.gif'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
@@ -29,11 +29,6 @@ function respond() {
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexPay.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/820x960.png.c0eca8bb4e9a4b3db068fc139ce4a698");
-    this.res.end();
-  } 
   else if(request.text && botRegexMI.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
@@ -47,11 +42,6 @@ function respond() {
     else if(request.text && botRegexYu.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.youtube.com/"+request.text.substring(8,request.text.length));
-    this.res.end();
-  } 
-  else if(request.text && botRegexTrade.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/715x741.png.824f085332c94560bdb69c4c94048178");
     this.res.end();
   } 
   else if(request.text && botRegexGuide.test(request.text)) {
