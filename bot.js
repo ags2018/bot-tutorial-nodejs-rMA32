@@ -26,7 +26,7 @@ function respond() {
   } 
   else if(request.text && botRegexTwitter.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://twitter.com/GamblerSZN");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
@@ -36,7 +36,7 @@ function respond() {
   }
   else if(request.text && botRegexPay.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/820x960.png.c0eca8bb4e9a4b3db068fc139ce4a698");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexMI.test(request.text)) {
@@ -56,12 +56,12 @@ function respond() {
   } 
   else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/715x741.png.824f085332c94560bdb69c4c94048178");
+    postMessage("");
     this.res.end();
   } 
   else if(request.text && botRegexGuide.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/562x724.png.1274436c6dd3438ab81700268e80081e");
+    postMessage("https://i.groupme.com/598x864.png.f4a6779abda24f71b847008b5157cff0.large");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -141,7 +141,7 @@ this.res.end();
 }
       else if(request.text && botRegexDL.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://daddyleagues.com/szn");
+postMessage("");
 this.res.end();
 }
         else if(request.text && botRegexWeekOne.test(request.text)) {
