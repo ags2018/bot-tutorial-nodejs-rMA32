@@ -5,10 +5,10 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;botRegexPay = /^\/payouts/;
+      botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/mike/; botDEZ = /^\/eat/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexYu = /^\/youtube/i; botRegexTrade = /^\/trades/; botRegexGuide = /^\/guidelines/;  botRegexSh = /^\/voll/; botRegexCC = /^\/bleach/; botRegexSr = /^\/trash/; botRegexQu = /^\/stfu/; botRegexBack = /^\/comeback/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCrying = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCommands = /^\/commands/; botRegexOffseason = /^\/offszn/; botRegexDL = /^\/gszn/; botRegexWeekOne = /^\/week1/;botRegexWeek2 = /^\/week 2/;botRegexWeek3 = /^\/week 3/;botRegexWeek4 = /^\/week 4/;botRegexWeek5 = /^\/week 5/;botRegexWeek6 = /^\/week 6/;botRegexWeek7 = /^\/week 7/;botRegexWeek8 = /^\/week 8/;botRegexWeek9 = /^\/week 9/;botRegexWeek10 = /^\/week 10/;botRegexWeek11 = /^\/week 11/;botRegexWeek12 = /^\/week 12/;botRegexWeek13 = /^\/week 13/;botRegexWeek14 = /^\/week 14/;botRegexWeek15 = /^\/week 15/;botRegexWeek16 = /^\/week 16/;botRegexWeek17 = /^\/week 17/; botRegexTwitter = /^\/twitter/; botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCrying = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://media.giphy.com/media/3o6Mb93JnT2hfbvK92/giphy.gif'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -22,11 +22,6 @@ function respond() {
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/480x374.gif.ff4b7c47fe184675a8418304fcd32e91");
-    this.res.end();
-  } 
-  else if(request.text && botRegexTwitter.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://twitter.com/GamblerSZN");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
@@ -61,7 +56,7 @@ function respond() {
   } 
   else if(request.text && botRegexGuide.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/562x724.png.1274436c6dd3438ab81700268e80081e");
+    postMessage("https://i.groupme.com/598x864.png.f4a6779abda24f71b847008b5157cff0.large");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -132,101 +127,6 @@ this.res.end();
   else if(request.text && botRegexCommands.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://i.groupme.com/192x479.png.59eb928f19b84fe89a85eed8e4f6b10e");
-this.res.end();
-}
-    else if(request.text && botRegexOffseason.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-      else if(request.text && botRegexDL.test(request.text)) {
-this.res.writeHead(200);
-postMessage("https://daddyleagues.com/szn");
-this.res.end();
-}
-        else if(request.text && botRegexWeekOne.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek2.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek3.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek4.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek5.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek6.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek7.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek8.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek9.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek10.test(request.text)) {
-this.res.writeHead(200);
-postMessage("e");
-this.res.end();
-}
-        else if(request.text && botRegexWeek11.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek12.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek13.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek14.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek15.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek16.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-        else if(request.text && botRegexWeek17.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
 this.res.end();
 }
   else if(request.text && botRegexCheese.test(request.text)) {
